@@ -1,0 +1,49 @@
+1. Compile the code
+   1) mvn compile
+   2) Maven put the .class files in target/classes/edu/worcester/cs/kwurst/cs242/
+   3) The other directories created were
+      target/maven-status/maven-compiler-plugin/compile/default-compile/.
+      Inside this directory were 2 .lst files, createdFiles.lst and inputFiles.lst.
+      
+2. Run the tests
+   1) mvn test
+   2) Maven put the .class file in target/test-classes/edu/worcester/cd/kwurst/cs242/.
+   3) The other directories created were
+      #1: target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/
+      	  -> Inside this directory were 2 .lst files, createdFiles.lst and inputFiles.lst.
+      #2: target/surfire-reports/
+      	  -> Inside this directory were a .txt file and a .xml file,
+	     edu.worcester.cs.kwurst.cs242.CardTest.txt and
+	     TEST-edu.worcester.cs.kwurst.cs242.CardTest.xml.
+
+3. Make a jar file.
+   1) mvn package
+   2) Maven put the Jar file in target/.
+   3) The other directories created were target/maven-archiver/. Inside this directory
+      was a file named pom.properties.
+
+4. Clean up the project.
+   1) mvn clean
+   2) The directory target/ and everything inside of it was removed from my project
+      directory.
+
+5. Make a web site for the project.
+   1) mvn site
+   2) Maven put the site directory in target/.
+   3) I used project-info.html.
+   4) The other directories created were:
+      #1: target/site/css/
+      	  -> Inside this directory were 4 .css files; maven-base.css, maven-theme.css,
+	     print.css, and site.css.
+      #2: target/images/
+      	  -> Inside here were various .gif and .png files relating to the html files in
+	     target/site/.
+      #3: taget/images/logos/
+      	  -> Inside here were three maven .png files relating to the html files in
+	     target/site/.
+   5) Cosidering that there was no .jar file created after running the mvn site command
+      I dont believe that the code was compiled.
+
+6. Make a jar file again. -> mvn package
+      
+   
